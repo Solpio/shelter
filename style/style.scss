@@ -1,3 +1,8 @@
-button{
-    display: block;
-}
+@import "./vendors/normalaize";
+
+@import "./abstract/constants";
+@import "./abstract/mixins";
+@import "./abstract/placeholders";
+@import "./base/base";
+
+@import "./pages/main";
