@@ -6,6 +6,7 @@ html {
 body{
     @extend %font-primery;
     @include font($size: 1.5rem, $height: 2.4rem);
+    color: $color-dark-xl;
 }
 
 h1,
@@ -25,6 +26,7 @@ h5 {
 
 h1 {
     @include font($size: 3.2rem, $height: 110%);
+    color: $color-primary;
 }
 
 h2 {
@@ -41,4 +43,13 @@ h4 {
 
 h5 {
     @include font($size: 1.5rem, $height: 110%);
+}
+
+button {
+    background: none;
+    border: none;
+    @include font($size: 1.7rem, $height: 130%);
+    @extend %font-secondary;
+    cursor: pointer;
+    padding: 0;
 }
