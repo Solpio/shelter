@@ -1,0 +1,21 @@
+.navigation{
+    &__table{
+        display: flex;
+        &_item{
+
+            margin-right: 35px;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0px;
+            }
+            &:hover{
+                color: $color-light-s;
+            }
+
+            &--active{
+                color: $color-light-s;
+                border-bottom: 3px $color-primary solid;
+            }
+        }
+    }
+}
