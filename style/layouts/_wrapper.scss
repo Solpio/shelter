@@ -1,0 +1,10 @@
+.wrapper{
+    margin: 0 auto;
+    max-width: calc($width-desktop - 80px);
+}
+
+.make_friend__wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
