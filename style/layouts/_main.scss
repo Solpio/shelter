@@ -4,3 +4,10 @@ body{
 .start_screen{
     background: url("../../assets/images/noise_transparent@2x.png"), $start-screen-gradient-background;
 }
+
+.main {
+    &__section {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+}
