@@ -1,3 +1,57 @@
 .footer{
      background: url("../../assets/images/noise_transparent@2x.png"), $footer-gradient-background;
+     &__info{
+          color: $color-primary;
+     }
+     &__article{
+          padding-top: 16px;
+          color: $color-light-xl;
+          span{
+               display: block;
+          }
+     }
+     &__wrapper{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 30px;
+     }
+     &__image{
+          width: 300px;
+          height: 310px;
+     }
+     &__details {
+          margin-top: 40px;
+          display: flex;
+          align-items: center;
+          span{
+               display: block;
+          }
+     }
+     &__icon{
+          margin-right: 20px;
+     }
+     &__line{
+          display: block;
+     }
+}
+
+.phone_icon{
+     display: inline-block;
+     width: 40px;
+     height: 32px;
+     background: url("../../assets/svg/icon-phone.svg")
+}
+
+.email_icon{
+     display: inline-block;
+     width: 40px;
+     height: 32px;
+     background: url("../../assets/svg/icon-email.svg")
+}
+
+.marker_icon{
+     display: inline-block;
+     width: 22px;
+     height: 32px;
+     background: url("../../assets/svg/icon-marker.svg")
 }

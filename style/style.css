@@ -492,6 +492,60 @@ body {
 .footer {
   background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
+.footer__info {
+  color: #F1CDB3;
+}
+.footer__article {
+  padding-top: 16px;
+  color: #FFFFFF;
+}
+.footer__article span {
+  display: block;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.footer__image {
+  width: 300px;
+  height: 310px;
+}
+.footer__details {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.footer__details span {
+  display: block;
+}
+.footer__icon {
+  margin-right: 20px;
+}
+.footer__line {
+  display: block;
+}
+
+.phone_icon {
+  display: inline-block;
+  width: 40px;
+  height: 32px;
+  background: url("../../assets/svg/icon-phone.svg");
+}
+
+.email_icon {
+  display: inline-block;
+  width: 40px;
+  height: 32px;
+  background: url("../../assets/svg/icon-email.svg");
+}
+
+.marker_icon {
+  display: inline-block;
+  width: 22px;
+  height: 32px;
+  background: url("../../assets/svg/icon-marker.svg");
+}
 
 .navigation__table {
   display: flex;
