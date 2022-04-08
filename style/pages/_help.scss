@@ -1,0 +1,72 @@
+.help__article{
+    text-align: center;
+    span{
+        display: block;
+    }
+}
+
+.help__svg{
+    width: 62px;
+    height: 62px;
+}
+
+.help_shelter__table{
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 1fr 1fr; 
+    grid-gap: 50px 0;
+
+    &--item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.help__text{
+    margin-top: 30px;
+}
+
+#one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#two{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+#three{
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+#four{
+    grid-column-start: 7;
+    grid-column-end: 9;
+}
+#five{
+    grid-column-start: 9;
+    grid-column-end: 11;
+}
+
+#six{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#seven{
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+#eight{
+    grid-row-start: 2;
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+#nine{
+    grid-row-start: 2;
+    grid-column-start: 8;
+    grid-column-end: 10;
+}

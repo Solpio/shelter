@@ -26,18 +26,6 @@
         width: 207px;
         height: 52px;
         margin-top: 25px;
-        border-radius: 100px;
-
-        color: $color-dark-3xl;
-        background-color: $color-primary;
-
         letter-spacing: 0.06em;
-
-        @extend %transition-time;   
-
-        &:hover{
-            background-color: $color-primary-light;
-            @extend %transition-time;   
-        }
     }
 }

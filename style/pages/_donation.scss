@@ -1,0 +1,57 @@
+.donation{
+    width: 100%;
+    &__image{
+        margin-top: 11px;
+        max-width: 505px;
+        height: 261px;
+        width: 100%;
+        margin-right: 30px;
+
+    }
+    &__article{
+        color: $color-dark-l;
+        span{
+            display: block;
+        }
+
+        &--under{
+            margin-top: 20px;
+            color: $color-dark-l;
+        }
+    }
+    &__wrapper{
+        margin: 0 auto;
+        display: flex;
+        max-width: 915px;
+    }
+    &__card_icon{
+        width: 30px;
+        height: 23px;
+    }
+    &__card{
+        display: flex;
+        background-color: $color-primary;
+        max-width: 350px;
+        margin-top: 20px;
+        padding: 10px 15px;
+        color: $color-dark-l;
+        @include font($size: 2rem, $height: 115%);
+        @extend %font-secondary;
+        letter-spacing: .06em;
+        box-sizing: border-box;
+        border-radius: 9px;
+    }
+    &__text_under_card{
+        margin-top: 20px;
+        color: $color-dark-m;
+        @include font($size: 1.2rem, $height: 150%, $style:italic);
+        
+    }
+}
+
+.card__nubmer{
+    display: flex;
+    margin-left: 15px;
+    // padding: 10px 15px;
+
+}

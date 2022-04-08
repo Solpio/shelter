@@ -1,0 +1,44 @@
+.button--primary{
+    background-color: $color-primary;
+    border-radius: 100px;
+    @extend %transition-time;  
+    letter-spacing: 0.06em; 
+
+    &:hover{
+        background-color: $color-primary-light;
+        @extend %transition-time;   
+    }
+}
+
+.button--secondary{
+    background-color: none;
+    color: $color-dark-3xl;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    @extend %transition-time;   
+    letter-spacing: 0.06em;
+
+    &:hover{
+        background-color: $color-primary-light;
+        @extend %transition-time; 
+        border: 2px solid $color-light-s;
+    }
+}
+
+.slider__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 52px;
+    min-height: 52px;
+    border: 3px solid $color-primary;
+    border-radius: 100px;
+    &--reversed{
+        transform: rotate(180deg);
+    }
+    @extend %transition-time; 
+    &:hover{
+        background-color: $color-primary;
+    }
+}
+

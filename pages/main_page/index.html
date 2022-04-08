@@ -40,7 +40,7 @@
               We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
               He or she will love you more than anybody else in the world, you will see!
             </p>
-            <button class="make_friend__button button">
+            <button class="make_friend__button button button--primary">
               Make a friend
             </button>
           </div>
@@ -68,64 +68,115 @@
           </div>
         </div>
       </section>
-      <section class="main__our_friends">
+      <section class="main__our_friends main__section">
         <h3 class="main__article friends__article">
           Our friends who
           <span>are looking for a house</span>
         </h3>
         <div class="main__slider">
-          <button class="slider__button slider__button--left"></button>
-          <div class="pet_card">
-            <div class="card__image"></div>
-            <div class="card__details">
-              Katrine
-              <button class="card__button">Learn more</button>
+          <button class="slider__button">
+            <img src="../../assets/svg/Arrow.svg" alt="">
+          </button>
+          <div class="slider">
+            <div class="card__wrapper">
+              <div class="pet_card">
+                <img class="card__image" src="../../assets/images/pets-katrine.png" alt="kit"></img>
+                <div class="card__details">
+                  <span class="card__name">Katrine</span>
+                  <button class="card__button button--secondary">Learn more</button>
+                </div>
+              </div>
+              <div class="pet_card">
+                <img class="card__image" src="../../assets/images/pets-katrine.png" alt="kit"></img>
+                <div class="card__details">
+                  <span class="card__name">Katrine</span>
+                  <button class="card__button button--secondary">Learn more</button>
+                </div>
+              </div>
+              <div class="pet_card">
+                <img class="card__image" src="../../assets/images/pets-katrine.png" alt="kit"></img>
+                <div class="card__details">
+                  <span class="card__name">Katrine</span>
+                  <button class="card__button button--secondary">Learn more</button>
+                </div>
+              </div>
             </div>
           </div>
-          <button class="slider__button slider__button--right"></button>
+        
+          <button class="slider__button slider__button--reversed">
+            <img src="../../assets/svg/Arrow.svg" alt="">
+          </button>
         </div>
-        <button class="our_friends__button">
+        <button class="our_friends__button button--primary">
           Get to know the rest
         </button>
       </section>
-      <section class="main__help_shelter">
-        <h3 class="main__article">
+      <section class="main__help_shelter main__section">
+        <h3 class="main__article help__article">
           How you can help
           <span class="main__article--new_line">our shelter</span>
         </h3>
         <div class="help_shelter__table">
-          <div class="help_shelter__table--item">
-            <object data="" type="xml"></object>
-            <!-- добавить иконку -->
-            <h4 class="main__article">Pet food</h4>
+          <div class="help_shelter__table--item" id="one">
+            <object data="../../assets/svg/icon-pet-food.svg" type="image/svg+xml" class="help__svg"></object>
+            <h4 class="main__article help__text">Pet food</h4>
           </div>
-          <div class="help_shelter__table--item"></div>
-          <div class="help_shelter__table--item"></div>
-          <div class="help_shelter__table--item"></div>
-          <div class="help_shelter__table--item"></div>
-          <div class="help_shelter__table--item"></div>
+          <div class="help_shelter__table--item" id="two">
+            <object data="../../assets/svg/icon-transportation.svg" type="image/svg+xml" class="help__svg"></object>
+            <h4 class="main__article help__text">Transportation</h4>
+          </div>
+          <div class="help_shelter__table--item" id="three">
+            <object data="../../assets/svg/icon-toys.svg" type="image/svg+xml" class="help__svg"></object>
+            <h4 class="main__article help__text">Toys</h4>
+          </div>
+          <div class="help_shelter__table--item" id="four">
+            <object data="../../assets/svg/icon-bowls-and-cups.svg" type="image/svg+xml" class="help__svg"></object>
+            <h4 class="main__article help__text">Bowls and cups</h4>
+          </div>
+          <div class="help_shelter__table--item" id="five">
+            <object data="../../assets/svg/icon-shampoos.svg" type="image/svg+xml" class="help__svg"></object>
+            <h4 class="main__article help__text">Shampoos</h4>
+          </div>
+          <div class="help_shelter__table--item" id="six">
+            <object data="../../assets/svg/icon-vitamins.svg" type="image/svg+xml" class="help__svg"></object>
+            <h4 class="main__article help__text">Vitamins</h4>
+          </div>
+          <div class="help_shelter__table--item" id="seven">
+            <object data="../../assets/svg/icon-medicines.svg" type="image/svg+xml" class="help__svg"></object>
+            <h4 class="main__article help__text">Medicines</h4>
+          </div>
+          <div class="help_shelter__table--item" id="eight">
+            <object data="../../assets/svg/icon-collars-leashes.svg" type="image/svg+xml" class="help__svg"></object>
+            <h4 class="main__article help__text">Collars / leashes</h4>
+          </div>
+          <div class="help_shelter__table--item" id="nine">
+            <object data="../../assets/svg/icon-sleeping-area.svg" type="image/svg+xml" class="help__svg"></object>
+            <h4 class="main__article help__text">Sleeping areas</h4>
+          </div>
         </div>
       </section>
-      <section class="main__donation">
-        <img src="" alt="">
-        <div class="dontation">
-          <h3 class="main__article">
-            You can also make a donation
-          </h3>
-          <h5 class="main__article">
-            Name of the bank / Type of bank account
-          </h5>
-          <div class="donation__card">
-            <object data="" type=""></object>
-            <div class="card_number">
-              8380 2880 8028 8791 7435
+      <section class="main__donation main__section">
+        <div class="donation__wrapper">
+          <img src="../../assets/images/donation-dog.png" alt="" class="donation__image">
+          <div class="donation">
+            <h3 class="main__article donation__article">
+              You can also <span> make a donation</span>
+            </h3>
+            <h5 class="main__article donation__article--under">
+              Name of the bank / Type of bank account
+            </h5>
+            <div class="donation__card">
+              <object data="../../assets/svg/credit-card.svg" type="image/svg+xml" class="donation__card_icon"></object>
+              <div class="card__nubmer">
+                8380 2880 8028 8791 7435
+              </div>
             </div>
+            <p class="donation__text_under_card">
+              Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
           </div>
-          <p class="donation__text_under_card">
-            Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          </p>
         </div>
       </section>
     </div>
