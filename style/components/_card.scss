@@ -7,6 +7,17 @@
     width: 270px;
     background-color: $color-light-s;
     margin-right: 90px;
+    @extend %transition-time;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-light-xl;
+        .card{
+            &__button{
+                background-color: $color-primary-light;
+            }
+        }
+    }
     
     .card{
         &__image{

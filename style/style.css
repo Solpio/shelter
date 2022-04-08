@@ -351,7 +351,7 @@ h5 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.slider__button, .button--secondary:hover, .button--secondary, .button--primary:hover, .button--primary {
+.slider__button, .button--secondary:hover, .button--secondary, .button--primary:hover, .button--primary, .pet_card {
   transition: all 0.3s;
 }
 
@@ -574,6 +574,13 @@ body {
   width: 270px;
   background-color: #FAFAFA;
   margin-right: 90px;
+  cursor: pointer;
+}
+.pet_card:hover {
+  background-color: #FFFFFF;
+}
+.pet_card:hover .card__button {
+  background-color: #FDDCC4;
 }
 .pet_card .card__image {
   width: inherit;
