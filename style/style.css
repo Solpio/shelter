@@ -585,6 +585,9 @@ body {
 .nav__link--pets:hover {
   color: #292929;
 }
+.nav__link--pets:focus {
+  color: #292929;
+}
 
 .card__wrapper {
   display: flex;
