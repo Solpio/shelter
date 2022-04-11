@@ -1,83 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style/style.css">
 </head>
+
 <body class="body">
+  <header class="header pets__header">
     <div class="wrapper">
-        <header class="header">
-            <div class="header__logo">
-                <h1 class="header__article">Cozy House</h1>
-                Shelter for pets in Boston
-            </div>
-            <nav class="header__navigation">
-                <ul class="navigation__table">
-                    <li class="navigation__table_item navigation__table_item--active">About the shelter</li>
-                    <li class="navigation__table_item">Our pets</li>
-                    <li class="navigation__table_item">Help the shelter</li>
-                    <li class="navigation__table_item">Contacts</li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <section class="main__our_friends">
-                <h3 class="main__article">
-                    Our friends who 
-                    <span class="main__article--new_line">are looking for a house</span>
-                </h3>
-                <div class="main__pagination">
-                    <div class="pet_card">
-                        <div class="card__image"></div>
-                        <div class="card__details">
-                            Katrine
-                            <button class="card__button">Learn more</button>
-                        </div>
-                    </div>
-                    <button class="pagination__button pagination__button--double_left"></button>
-                    <button class="pagination__button pagination__button--left"></button>
-                    <div class="pagination__page">1</div>
-                    <button class="pagination__button pagination__button--right"></button>
-                    <button class="pagination__button pagination__button--double_right"></button>
-                </div>
-                <button class="our_friends__button">
-                    Get to know the rest
-                </button>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__info">
-                <h3 class="main__article">
-                    For questions and suggestions
-                </h3>
-                <div class="footer__email">
-                    <object data="" type=""></object>
-                    email@shelter.com
-                </div>
-                <div class="footer__phone">
-                    <object data="" type=""></object>
-                    +13 674 567 75 54
-                </div>
-            </div>
-            <div class="footer__info">
-                <h3 class="main__article">
-                    We are waiting for your visit
-                </h3>
-                <div class="footer__adress">
-                    <object data="" type=""></object>
-                    1 Central Street, Boston (entrance from the store)
-                </div>
-                <div class="footer__adress">
-                    <object data="" type=""></object>
-                    18 South Park, London 
-                </div>
-            </div>
-            <img class="footer__image" src="" alt="">
-        </footer>
+      <div class="header__wrapper pets__wrapper">
+        <div class="header__logo pets__logo">
+          <h1 class="header__article pets__article">Cozy House</h1>
+          Shelter for pets in Boston
+        </div>
+        <nav class="header__navigation pets__navigation">
+          <ul class="navigation__table">
+            <li class="navigation__table_item pets__item">About the shelter</li>
+            <li class="navigation__table_item navigation__table_item--active pets__item pets__item--active">Our pets</li>
+            <li class="navigation__table_item pets__item">Help the shelter</li>
+            <li class="navigation__table_item pets__item">Contacts</li>
+          </ul>
+        </nav>
+      </div>
     </div>
+  </header>
+  <main class="main">
+    <section class="main__our_friends main__section">
+      <h3 class="main__article pets__article--h3">
+        Our friends who
+        <span>are looking for a house</span>
+      </h3>
+      <div class="pets__pagination">
+        <div class="pagination__wrapper wrapper">
+          <div class="pet_card pet_card--pets_page">
+            <img class="card__image" src="../../assets/images/pets-katrine.png" alt="kit"></img>
+            <div class="card__details">
+              <span class="card__name">Katrine</span>
+              <button class="card__button button--secondary">Learn more</button>
+            </div>
+          </div>
+          <div class="pet_card pet_card--pets_page">
+            <img class="card__image" src="../../assets/images/pets-jennifer.png" alt="kit"></img>
+            <div class="card__details">
+              <span class="card__name">Jennifer</span>
+              <button class="card__button button--secondary">Learn more</button>
+            </div>
+          </div>
+          <div class="pet_card pet_card--pets_page">
+            <img class="card__image" src="../../assets/images/pets-woody.png" alt="kit"></img>
+            <div class="card__details">
+              <span class="card__name">Woody</span>
+              <button class="card__button button--secondary">Learn more</button>
+            </div>
+          </div>
+          <div class="pet_card pet_card--pets_page">
+            <img class="card__image" src="../../assets/images/pets-sophia.png" alt="kit"></img>
+            <div class="card__details">
+              <span class="card__name">Sophia</span>
+              <button class="card__button button--secondary">Learn more</button>
+            </div>
+          </div>
+          <div class="pet_card pet_card--pets_page">
+            <img class="card__image" src="../../assets/images/pets-timmy.png" alt="kit"></img>
+            <div class="card__details">
+              <span class="card__name">Timmy</span>
+              <button class="card__button button--secondary">Learn more</button>
+            </div>
+          </div>
+          <div class="pet_card pet_card--pets_page">
+            <img class="card__image" src="../../assets/images/pets-charly.png" alt="kit"></img>
+            <div class="card__details">
+              <span class="card__name">Charly</span>
+              <button class="card__button button--secondary">Learn more</button>
+            </div>
+          </div>
+          <div class="pet_card pet_card--pets_page">
+            <img class="card__image" src="../../assets/images/pets-scarlet.png" alt="kit"></img>
+            <div class="card__details">
+              <span class="card__name">Scarlett</span>
+              <button class="card__button button--secondary">Learn more</button>
+            </div>
+          </div>
+          <div class="pet_card pet_card--pets_page">
+            <img class="card__image" src="../../assets/images/pets-freddie.png" alt="kit"></img>
+            <div class="card__details">
+              <span class="card__name">Freddie</span>
+              <button class="card__button button--secondary">Learn more</button>
+            </div>
+          </div>
+        </div>
+        <nav class="pagination__navigation">
+          <button class="pagination__button pagination__button--disabled" disabled>&lt;&lt;</button>
+          <button class="pagination__button pagination__button--disabled" disabled>&lt;</button>
+          <div class="pagination__page"><span>1</span></div>
+          <button class="pagination__button">&gt;</button>
+          <button class="pagination__button">&gt;&gt;</button>
+        </nav>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__info">
+        <h3 class="main__article footer__article">
+          For questions <span>and suggestions</span>
+        </h3>
+        <h4 class="footer__details">
+          <span class="footer__icon email_icon"></span> email@shelter.com
+        </h4>
+        <h4 class="footer__details">
+          <span class="footer__icon phone_icon"></span> +13 674 567 75 54
+        </h4>
+      </div>
+      <div class="footer__info">
+        <h3 class="main__article footer__article">
+          We are waiting <span>for your visit</span>
+        </h3>
+        <h4 class="footer__details">
+          <span class="footer__icon marker_icon"></span><span class="footer__line">1 Central Street, Boston
+            <span>(entrance from the store)</span></span>
+        </h4>
+        <h4 class="footer__details">
+          <span class="footer__icon marker_icon"></span> 18 South Park, London
+        </h4>
+      </div>
+      <img class="footer__image" src="../../assets/images/footer-puppy.png" alt="">
+    </div>
+  </footer>
 
 </body>
+
 </html>
