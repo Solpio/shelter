@@ -422,6 +422,11 @@ button {
   padding: 0;
 }
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -565,6 +570,22 @@ body {
   border-bottom: 3px #F1CDB3 solid;
 }
 
+.nav__link {
+  color: #CDCDCD;
+}
+.nav__link:hover {
+  color: #FAFAFA;
+}
+.nav__link--active {
+  color: #FAFAFA;
+}
+.nav__link--pets {
+  color: #545454;
+}
+.nav__link--pets:hover {
+  color: #292929;
+}
+
 .card__wrapper {
   display: flex;
   justify-content: space-between;
@@ -668,6 +689,10 @@ body {
   height: 52px;
   margin-top: 25px;
   letter-spacing: 0.06em;
+}
+
+.make_friend__link {
+  color: #292929;
 }
 
 .about__wrapper {
@@ -869,15 +894,6 @@ body {
 }
 .pets__article--h3 span {
   display: block;
-}
-.pets__item {
-  color: #545454;
-}
-.pets__item:hover {
-  color: #292929;
-}
-.pets__item--active {
-  color: #292929;
 }
 .pets__pagination {
   margin: 45px 0 45px 0;

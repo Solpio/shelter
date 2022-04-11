@@ -11,7 +11,7 @@
 
 <body class="body">
   <main class="main">
-    <div class="start_screen">
+    <div class="start_screen" id="start">
       <header class="header">
         <div class="wrapper">
           <div class="header__wrapper">
@@ -21,10 +21,10 @@
             </div>
             <nav class="header__navigation">
               <ul class="navigation__table">
-                <li class="navigation__table_item navigation__table_item--active">About the shelter</li>
-                <li class="navigation__table_item">Our pets</li>
-                <li class="navigation__table_item">Help the shelter</li>
-                <li class="navigation__table_item">Contacts</li>
+                <li class="navigation__table_item navigation__table_item--active"> <a class="nav__link nav__link--active" href="#start"> About the shelter</a></li>
+                <li class="navigation__table_item"><a class="nav__link" href="">Our pets</a></li>
+                <li class="navigation__table_item"><a class="nav__link" href="#help">Help the shelter</a></li>
+                <li class="navigation__table_item"><a class="nav__link" href="#contacts">Contacts</a></li>
               </ul>
             </nav>
           </div>
@@ -41,7 +41,7 @@
               He or she will love you more than anybody else in the world, you will see!
             </p>
             <button class="make_friend__button button button--primary">
-              Make a friend
+              <a href="#friends" class="make_friend__link">Make a friend</a>
             </button>
           </div>
           <div class="make_friend__image"></div>
@@ -68,7 +68,7 @@
           </div>
         </div>
       </section>
-      <section class="main__our_friends main__section">
+      <section class="main__our_friends main__section" id="friends">
         <h3 class="main__article friends__article">
           Our friends who
           <span>are looking for a house</span>
@@ -111,7 +111,7 @@
           Get to know the rest
         </button>
       </section>
-      <section class="main__help_shelter main__section">
+      <section class="main__help_shelter main__section" id="help">
         <h3 class="main__article help__article">
           How you can help
           <span class="main__article--new_line">our shelter</span>
@@ -181,7 +181,7 @@
       </section>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="wrapper footer__wrapper">
       <div class="footer__info">
         <h3 class="main__article footer__article">
