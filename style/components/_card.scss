@@ -8,6 +8,7 @@
     background-color: $color-light-s;
     margin-right: 90px;
     @extend %transition-time;
+    border-radius: 9px;
     cursor: pointer;
 
     &:hover{
@@ -39,5 +40,8 @@
             padding: 15px 45px;
             margin-bottom: 30px;
         }
+    }
+    &--pets_page{
+        margin: 0;
     }
 }

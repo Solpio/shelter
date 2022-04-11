@@ -1,0 +1,90 @@
+.pets {
+    &__wrapper{
+        padding: 30px 0 30px 0;
+    }
+    &__logo{
+        color: $color-dark-3xl;
+    }
+    &__header {
+        position: sticky;
+        top: 0;
+        color: $color-dark-l;
+        background-color: $color-light-xl;
+    }
+
+    &__article {
+        color: $color-dark-l;
+        &--h3{
+            text-align: center;
+            span{
+                display: block;
+            }
+        }
+    }
+
+    &__item {
+        color: $color-dark-l;
+
+        &:hover {
+
+            color: $color-dark-3xl;
+
+        }
+        &--active{
+            color: $color-dark-3xl;
+        }
+    }
+    &__pagination{
+        margin: 45px 0 45px 0;
+    }
+}
+
+.pagination__wrapper{
+    padding: 15px 0 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px 40px;
+}
+
+.pagination__navigation{
+    margin: 45px auto 0 auto;
+    max-width: 340px;
+    display: flex;
+    justify-content: space-between;
+    @include font($size: 2rem, $height: 115%);
+    @extend %font-secondary;
+}
+
+.pagination__button {
+    width: 52px;
+    height: 52px;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    @extend %transition-time;
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+
+    &--disabled {
+        cursor:default;
+        border-color: $color-dark-s;
+        &:hover {
+
+            background-color: $color-light-l;
+        }
+    }
+}
+
+.pagination__page{
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: $color-primary;
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+    }
+}

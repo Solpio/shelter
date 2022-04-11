@@ -343,7 +343,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.donation__card, .pet_card .card__name, button, h1,
+.pagination__navigation, .donation__card, .pet_card .card__name, button, h1,
 h2,
 h3,
 h4,
@@ -351,7 +351,7 @@ h5 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.slider__button, .button--secondary:hover, .button--secondary, .button--primary:hover, .button--primary, .pet_card {
+.pagination__button, .slider__button, .button--secondary:hover, .button--secondary, .button--primary:hover, .button--primary, .pet_card {
   transition: all 0.3s;
 }
 
@@ -574,6 +574,7 @@ body {
   width: 270px;
   background-color: #FAFAFA;
   margin-right: 90px;
+  border-radius: 9px;
   cursor: pointer;
 }
 .pet_card:hover {
@@ -601,6 +602,9 @@ body {
 .pet_card .card__button {
   padding: 15px 45px;
   margin-bottom: 30px;
+}
+.pet_card--pets_page {
+  margin: 0;
 }
 
 .button--primary {
@@ -843,6 +847,88 @@ body {
 .card__nubmer {
   display: flex;
   margin-left: 15px;
+}
+
+.pets__wrapper {
+  padding: 30px 0 30px 0;
+}
+.pets__logo {
+  color: #292929;
+}
+.pets__header {
+  position: sticky;
+  top: 0;
+  color: #545454;
+  background-color: #FFFFFF;
+}
+.pets__article {
+  color: #545454;
+}
+.pets__article--h3 {
+  text-align: center;
+}
+.pets__article--h3 span {
+  display: block;
+}
+.pets__item {
+  color: #545454;
+}
+.pets__item:hover {
+  color: #292929;
+}
+.pets__item--active {
+  color: #292929;
+}
+.pets__pagination {
+  margin: 45px 0 45px 0;
+}
+
+.pagination__wrapper {
+  padding: 15px 0 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px 40px;
+}
+
+.pagination__navigation {
+  margin: 45px auto 0 auto;
+  max-width: 340px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+}
+
+.pagination__button {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+}
+.pagination__button:hover {
+  background-color: #FDDCC4;
+}
+.pagination__button--disabled {
+  cursor: default;
+  border-color: #CDCDCD;
+}
+.pagination__button--disabled:hover {
+  background-color: #F6F6F6;
+}
+
+.pagination__page {
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  background-color: #F1CDB3;
+}
+.pagination__page span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
