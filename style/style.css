@@ -698,6 +698,10 @@ body {
   color: #292929;
 }
 
+.rest__link {
+  color: #292929;
+}
+
 .about__wrapper {
   margin: 0 auto;
   display: flex;
