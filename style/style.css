@@ -604,6 +604,7 @@ body {
 }
 .pet_card:hover {
   background-color: #FFFFFF;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .pet_card:hover .card__button {
   background-color: #FDDCC4;
