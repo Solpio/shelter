@@ -1,12 +1,12 @@
 .card__wrapper{
     display: flex;
-    justify-content: space-between;
+    column-gap: 90px;
+    max-width: 990px;
 }
 
 .pet_card{
     width: 270px;
     background-color: $color-light-s;
-    margin-right: 90px;
     @extend %transition-time;
     border-radius: 9px;
     cursor: pointer;
