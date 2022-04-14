@@ -1,8 +1,18 @@
 .wrapper{
     margin: 0 auto;
     max-width: calc($width-desktop - 80px);
+    @include media-desktop{
+        background-color: aqua;
+    }
+
     @include media-tablet{
         max-width: calc($width-tablet - 20px);
+        background-color: green;
+    }
+
+    @include media-mobile{
+        max-width: calc($width-tablet - 20px);
+        background-color: yellow;
     }
 }
 

@@ -5,6 +5,14 @@
     line-height: $height;
 }
 
+
+@mixin media-desktop{
+    @media (max-width: calc($width-desktop - 1px)) {
+        @content;
+    }
+}
+
+
 @mixin media-tablet{
     @media (max-width: $width-tablet) {
         @content;

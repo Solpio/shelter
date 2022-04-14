@@ -335,6 +335,10 @@ template {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -431,9 +435,21 @@ a, a:hover, a:focus, a:active {
   margin: 0 auto;
   max-width: 1200px;
 }
+@media (max-width: 1279px) {
+  .wrapper {
+    background-color: aqua;
+  }
+}
 @media (max-width: 768px) {
   .wrapper {
     max-width: 748px;
+    background-color: green;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper {
+    max-width: 748px;
+    background-color: yellow;
   }
 }
 
@@ -464,6 +480,13 @@ a, a:hover, a:focus, a:active {
   align-items: center;
   justify-content: space-between;
   padding: 60px 0 60px 0;
+}
+@media (max-width: 768px) {
+  .header__wrapper {
+    margin: 0 auto;
+    padding: 30px 0 60px 0;
+    max-width: 708px;
+  }
 }
 
 body {
@@ -675,6 +698,40 @@ body {
   background-color: #F1CDB3;
 }
 
+.burger_menu {
+  width: 30px;
+  display: none;
+}
+@media (max-width: 320px) {
+  .burger_menu {
+    display: block;
+  }
+}
+
+.burger_line {
+  width: inherit;
+  height: 2px;
+  background-color: #F1CDB3;
+}
+.burger_line::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 8px;
+  background-color: inherit;
+  width: inherit;
+  height: inherit;
+}
+.burger_line::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 8px;
+  background-color: inherit;
+  width: inherit;
+  height: inherit;
+}
+
 .make_friend__article {
   color: #FFFFFF;
 }
@@ -690,9 +747,14 @@ body {
   margin-top: 163px;
 }
 .make_friend__image {
-  width: 698px;
+  display: block;
+  max-width: 698px;
+  width: 100%;
   height: 728px;
-  background: url("../../assets/images/start-screen-puppy.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../assets/images/start-screen-puppy.png");
+  background-position: bottom;
 }
 .make_friend__button {
   width: 207px;
