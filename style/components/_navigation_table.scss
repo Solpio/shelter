@@ -1,6 +1,12 @@
 .navigation{
     &__table{
         display: flex;
+
+        @include media-tablet{
+            display: none;
+        }
+
+
         &_item{
 
             margin-right: 35px;

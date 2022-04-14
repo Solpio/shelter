@@ -1,7 +1,9 @@
 .burger_menu{
         width: 30px;
+        height: 26px;
         display: none;
-        @include media-mobile{
+        @include media-tablet{
+            cursor: pointer;
             display: block;
         }
 }
@@ -14,7 +16,7 @@
         content: "";
         display: block;
         position: relative;
-        bottom: 8px;
+        top: 10px;
         background-color: inherit;
         width: inherit;
         height: inherit;
@@ -23,7 +25,7 @@
         content: "";
         display: block;
         position: relative;
-        top: 8px;
+        top: 18px;
         background-color: inherit;
         width: inherit;
         height: inherit;

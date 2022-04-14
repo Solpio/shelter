@@ -14,7 +14,7 @@
 
 
 @mixin media-tablet{
-    @media (max-width: $width-tablet) {
+    @media (max-width: calc($width-tablet - 1px)) {
         @content;
     }
 }

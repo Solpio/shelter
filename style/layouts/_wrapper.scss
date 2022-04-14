@@ -1,22 +1,22 @@
 .wrapper{
     margin: 0 auto;
     max-width: calc($width-desktop - 80px);
-    @include media-desktop{
-        background-color: aqua;
-    }
 
     @include media-tablet{
         max-width: calc($width-tablet - 20px);
-        background-color: green;
     }
 
     @include media-mobile{
         max-width: calc($width-tablet - 20px);
-        background-color: yellow;
     }
 }
 
 .make_friend__wrapper{
     display: flex;
     justify-content: space-between;
+
+    @include media-desktop{
+        flex-direction: column;
+        align-items: center;
+    }
 }
