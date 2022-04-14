@@ -4,3 +4,15 @@
     font-weight: $weight;
     line-height: $height;
 }
+
+@mixin media-tablet{
+    @media (max-width: $width-tablet) {
+        @content;
+    }
+}
+
+@mixin media-tablet{
+    @media (max-width: $width-mobile) {
+        @content;
+    }
+}
