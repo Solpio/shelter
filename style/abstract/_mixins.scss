@@ -11,7 +11,7 @@
     }
 }
 
-@mixin media-tablet{
+@mixin media-mobile{
     @media (max-width: $width-mobile) {
         @content;
     }
