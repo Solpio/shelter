@@ -1,12 +1,24 @@
 .donation{
     width: 100%;
+    @include media-desktop{
+        margin-bottom: 60px;
+        max-width: 380px;
+    }
+
     &__image{
         margin-top: 11px;
         max-width: 505px;
         height: 261px;
         width: 100%;
         margin-right: 30px;
-
+        @include media-desktop{
+            order: 2;
+            margin: 0;
+        }
+        @include media-tablet{
+            max-width: 260px;
+            max-height: 135px;
+        }
     }
     &__article{
         color: $color-dark-l;
@@ -17,12 +29,26 @@
         &--under{
             margin-top: 20px;
             color: $color-dark-l;
+            @include media-tablet{
+                @include font($size: 1.5rem, $height: 160%);
+                text-align: center;
+                letter-spacing: 0;
+            }
+        }
+
+        @include media-tablet{
+            text-align: center;
         }
     }
     &__wrapper{
         margin: 0 auto;
         display: flex;
         max-width: 915px;
+        @include media-desktop{
+            max-width: 505px;
+            align-items: center;
+            flex-direction: column;
+        }
     }
     &__card_icon{
         width: 30px;
@@ -40,18 +66,34 @@
         letter-spacing: .06em;
         box-sizing: border-box;
         border-radius: 9px;
+        @include media-tablet{
+            max-width: 281px;
+            margin: 0 auto;
+            margin-top: 19px;
+            padding-right: 0;
+            // letter-spacing: .05em;
+        }
     }
     &__text_under_card{
         margin-top: 20px;
         color: $color-dark-m;
         @include font($size: 1.2rem, $height: 150%, $style:italic);
-        
+        margin-bottom: 0px;
+        @include media-tablet{
+            max-width: 280px;
+            margin: 20px auto -18px auto;
+            text-align: justify;    
+        }
     }
 }
 
 .card__nubmer{
     display: flex;
     margin-left: 15px;
+    @include media-tablet{
+        margin: auto auto;
+        @include font($size:1.5rem, $height:1.65rem);
+    }
     // padding: 10px 15px;
 
 }
