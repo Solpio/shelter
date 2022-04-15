@@ -45,6 +45,10 @@ h3 {
 
 h4 {
     @include font($size: 2rem, $height: 115%);
+    @include media-tablet{
+
+        @include font($size:1.5rem, $height:1.65rem);
+    }
 }
 
 h5 {

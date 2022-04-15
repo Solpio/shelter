@@ -8,6 +8,10 @@
 .help__svg{
     width: 62px;
     height: 62px;
+    @include media-tablet{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .help_shelter__table{
@@ -16,57 +20,114 @@
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: 1fr 1fr; 
     grid-gap: 50px 0;
-
     &--item{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    @include media-desktop{
+        grid-template-columns: repeat(auto-fit, 170px);
+        grid-gap: 55px 60px;
+        justify-content: center;
+    }
+
+    @include media-tablet{
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        grid-gap: 30px 30px;
+        margin-top: 42px;
+    }
 }
 
 .help__text{
     margin-top: 30px;
+    @include media-tablet{
+        margin-top: 20px;
+    }
 }
 
 #one{
     grid-column-start: 1;
     grid-column-end: 3;
+    @include media-desktop{
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
 }
 
 #two{
     grid-column-start: 3;
     grid-column-end: 5;
+    @include media-desktop{
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
 }
+
 #three{
     grid-column-start: 5;
     grid-column-end: 7;
+    @include media-desktop{
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
 }
+
 #four{
     grid-column-start: 7;
     grid-column-end: 9;
+    @include media-desktop{
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
 }
+
 #five{
     grid-column-start: 9;
     grid-column-end: 11;
+    @include media-desktop{
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
 }
 
 #six{
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 4;
+    @include media-desktop{
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start:auto
+    }
 }
 #seven{
     grid-row-start: 2;
     grid-column-start: 4;
     grid-column-end: 6;
+    @include media-desktop{
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start:auto
+    }
 }
 #eight{
     grid-row-start: 2;
     grid-column-start: 6;
     grid-column-end: 8;
+    @include media-desktop{
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start:auto
+    }
 }
 #nine{
     grid-row-start: 2;
     grid-column-start: 8;
     grid-column-end: 10;
+    @include media-desktop{
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start:auto
+    }
 }

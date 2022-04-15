@@ -423,6 +423,14 @@ h4 {
   font-weight: 400;
   line-height: 115%;
 }
+@media (max-width: 767px) {
+  h4 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.65rem;
+  }
+}
 
 h5 {
   font-size: 1.5rem;
@@ -539,12 +547,27 @@ body {
   align-items: center;
 }
 .main__slider {
+  display: flex;
   max-width: 1200px;
   width: 100%;
   margin: 60px 0 57px 0;
-  display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 1279px) {
+  .main__slider {
+    max-width: 708px;
+  }
+}
+@media (max-width: 767px) {
+  .main__slider {
+    max-width: 270px;
+    margin: 42px 0 42px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 80px;
+  }
 }
 .main__donation {
   background-color: #F6F6F6;
@@ -660,6 +683,17 @@ body {
   column-gap: 90px;
   max-width: 990px;
 }
+@media (max-width: 1279px) {
+  .card__wrapper {
+    column-gap: 40px;
+    max-width: 580px;
+  }
+}
+@media (max-width: 767px) {
+  .card__wrapper {
+    max-width: 270px;
+  }
+}
 
 .pet_card {
   width: 270px;
@@ -723,8 +757,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 52px;
-  min-height: 52px;
+  width: 52px;
+  height: 52px;
   border: 3px solid #F1CDB3;
   border-radius: 100px;
 }
@@ -733,6 +767,12 @@ body {
 }
 .slider__button:hover {
   background-color: #F1CDB3;
+}
+@media (max-width: 767px) {
+  .slider__button {
+    order: 1;
+    align-self: flex-end;
+  }
 }
 
 .burger_menu {
@@ -973,6 +1013,12 @@ body {
   width: 62px;
   height: 62px;
 }
+@media (max-width: 767px) {
+  .help__svg {
+    width: 50px;
+    height: 50px;
+  }
+}
 
 .help_shelter__table {
   display: grid;
@@ -986,34 +1032,83 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 1279px) {
+  .help_shelter__table {
+    grid-template-columns: repeat(auto-fit, 170px);
+    grid-gap: 55px 60px;
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .help_shelter__table {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-gap: 30px 30px;
+    margin-top: 42px;
+  }
+}
 
 .help__text {
   margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .help__text {
+    margin-top: 20px;
+  }
 }
 
 #one {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+@media (max-width: 1279px) {
+  #one {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+}
 
 #two {
   grid-column-start: 3;
   grid-column-end: 5;
+}
+@media (max-width: 1279px) {
+  #two {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
 }
 
 #three {
   grid-column-start: 5;
   grid-column-end: 7;
 }
+@media (max-width: 1279px) {
+  #three {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+}
 
 #four {
   grid-column-start: 7;
   grid-column-end: 9;
 }
+@media (max-width: 1279px) {
+  #four {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+}
 
 #five {
   grid-column-start: 9;
   grid-column-end: 11;
+}
+@media (max-width: 1279px) {
+  #five {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
 }
 
 #six {
@@ -1021,11 +1116,25 @@ body {
   grid-column-start: 2;
   grid-column-end: 4;
 }
+@media (max-width: 1279px) {
+  #six {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+  }
+}
 
 #seven {
   grid-row-start: 2;
   grid-column-start: 4;
   grid-column-end: 6;
+}
+@media (max-width: 1279px) {
+  #seven {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+  }
 }
 
 #eight {
@@ -1033,11 +1142,25 @@ body {
   grid-column-start: 6;
   grid-column-end: 8;
 }
+@media (max-width: 1279px) {
+  #eight {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+  }
+}
 
 #nine {
   grid-row-start: 2;
   grid-column-start: 8;
   grid-column-end: 10;
+}
+@media (max-width: 1279px) {
+  #nine {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+  }
 }
 
 .donation {
