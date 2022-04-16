@@ -466,7 +466,7 @@ a, a:hover, a:focus, a:active {
 }
 @media (max-width: 320px) {
   .wrapper {
-    max-width: 748px;
+    max-width: 300px;
   }
 }
 
@@ -583,6 +583,11 @@ body {
 }
 .footer__info {
   color: #F1CDB3;
+}
+@media (max-width: 767px) {
+  .footer__info {
+    margin-bottom: 40px;
+  }
 }
 .footer__article {
   padding-top: 16px;
@@ -1364,16 +1369,36 @@ body {
 .pets__pagination {
   margin: 45px 0 45px 0;
 }
+@media (max-width: 1279px) {
+  .pets__pagination {
+    overflow: hidden;
+    height: 1365px;
+  }
+}
+.pets__line {
+  background-color: #000000;
+}
 
 .pagination__wrapper {
   padding: 15px 0 15px 0;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, 270px);
   grid-gap: 30px 40px;
+}
+@media (max-width: 1279px) {
+  .pagination__wrapper {
+    max-width: 688px;
+  }
+}
+@media (max-width: 767px) {
+  .pagination__wrapper {
+    max-width: 290px;
+  }
 }
 
 .pagination__navigation {
-  margin: 45px auto 0 auto;
+  margin: 0 auto;
   max-width: 340px;
   display: flex;
   justify-content: space-between;
@@ -1381,6 +1406,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 115%;
+  width: 100%;
 }
 
 .pagination__button {

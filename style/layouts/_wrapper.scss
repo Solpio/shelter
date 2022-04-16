@@ -2,12 +2,13 @@
     margin: 0 auto;
     max-width: calc($width-desktop - 80px);
 
+
     @include media-tablet{
         max-width: calc($width-tablet - 20px);
     }
 
     @include media-mobile{
-        max-width: calc($width-tablet - 20px);
+        max-width: calc($width-mobile - 20px);
     }
 }
 

@@ -2,6 +2,9 @@
      background: url("../../assets/images/noise_transparent@2x.png"), $footer-gradient-background;
      &__info{
           color: $color-primary;
+          @include media-tablet{
+               margin-bottom: 40px;
+          }
      }
      &__article{
           padding-top: 16px;
