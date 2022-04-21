@@ -1,7 +1,19 @@
 .card__wrapper{
     display: flex;
-    column-gap: 90px;
     max-width: 990px;
+    justify-content: center;
+    @extend %transition-time;
+    @include media-desktop{
+        max-width: 580px;
+    }
+    @include media-tablet{
+        max-width: 270px;
+    }
+}
+
+.card__bundle{
+    display: flex;
+    column-gap: 90px;
     @include media-desktop{
         column-gap: 40px;
         max-width: 580px;

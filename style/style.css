@@ -355,7 +355,7 @@ h5 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.pagination__button, .slider__button, .button--secondary:hover, .button--secondary, .button--primary:hover, .button--primary, .pet_card {
+.pagination__button, .slider__button, .button--secondary:hover, .button--secondary, .button--primary:hover, .button--primary, .pet_card, .card__wrapper {
   transition: all 0.3s;
 }
 
@@ -739,17 +739,31 @@ body {
 
 .card__wrapper {
   display: flex;
-  column-gap: 90px;
   max-width: 990px;
 }
 @media (max-width: 1279px) {
   .card__wrapper {
-    column-gap: 40px;
     max-width: 580px;
   }
 }
 @media (max-width: 767px) {
   .card__wrapper {
+    max-width: 270px;
+  }
+}
+
+.card__bundle {
+  display: flex;
+  column-gap: 90px;
+}
+@media (max-width: 1279px) {
+  .card__bundle {
+    column-gap: 40px;
+    max-width: 580px;
+  }
+}
+@media (max-width: 767px) {
+  .card__bundle {
     max-width: 270px;
   }
 }
