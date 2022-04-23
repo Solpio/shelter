@@ -1,13 +1,19 @@
 .card__wrapper{
+    position: relative;
     display: flex;
     max-width: 990px;
-    justify-content: center;
+    left: calc(-990px - 90px);
+    // justify-content: center;
+    column-gap: 90px;
     @extend %transition-time;
     @include media-desktop{
         max-width: 580px;
+        column-gap: 40px;
+        left: calc(-580px - 40px);
     }
     @include media-tablet{
         max-width: 270px;
+        left: calc(-270px - 40px);
     }
 }
 
@@ -66,3 +72,65 @@
         margin: 0;
     }
 }
+
+
+@keyframes move-left {
+    from{left: calc(-990px - 90px)};
+    to {left: 0};
+}
+
+@keyframes move-right {
+    from{left: calc(-990px - 90px)};
+    to {left: calc((-990px - 90px) * 2)};
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 1s;
+  }
+
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 1s;
+  }
+
+@keyframes move-left-tablet {
+    from{left: calc(-580px - 40px)};
+    to {left: 0};
+}
+
+@keyframes move-right-tablet {
+    from{ left: calc(-580px - 40px)};
+    to {left: calc((-580px - 40px) * 2)};
+}
+
+.transition-right-tablet {
+    animation-name: move-right-tablet;
+    animation-duration: 1s;
+  }
+
+.transition-left-tablet {
+    animation-name: move-left-tablet;
+    animation-duration: 1s;
+  }
+
+
+@keyframes move-left-mobile {
+    from{left: calc(-270px - 40px)};
+    to {left: 0};
+}
+
+@keyframes move-right-mobile {
+    from{left: calc(-270px - 40px)};
+    to {left: calc((-270px - 40px) * 2)};
+}
+
+.transition-right-mobile {
+    animation-name: move-right-mobile;
+    animation-duration: 1s;
+  }
+
+.transition-left-mobile {
+    animation-name: move-left-mobile;
+    animation-duration: 1s;
+  }

@@ -738,17 +738,23 @@ body {
 }
 
 .card__wrapper {
+  position: relative;
   display: flex;
   max-width: 990px;
+  left: -1080px;
+  column-gap: 90px;
 }
 @media (max-width: 1279px) {
   .card__wrapper {
     max-width: 580px;
+    column-gap: 40px;
+    left: -620px;
   }
 }
 @media (max-width: 767px) {
   .card__wrapper {
     max-width: 270px;
+    left: -310px;
   }
 }
 
@@ -803,6 +809,84 @@ body {
 }
 .pet_card--pets_page {
   margin: 0;
+}
+
+@keyframes move-left {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes move-right {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: -2160px;
+  }
+}
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+@keyframes move-left-tablet {
+  from {
+    left: -620px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes move-right-tablet {
+  from {
+    left: -620px;
+  }
+  to {
+    left: -1240px;
+  }
+}
+.transition-right-tablet {
+  animation-name: move-right-tablet;
+  animation-duration: 1s;
+}
+
+.transition-left-tablet {
+  animation-name: move-left-tablet;
+  animation-duration: 1s;
+}
+
+@keyframes move-left-mobile {
+  from {
+    left: -310px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes move-right-mobile {
+  from {
+    left: -310px;
+  }
+  to {
+    left: -620px;
+  }
+}
+.transition-right-mobile {
+  animation-name: move-right-mobile;
+  animation-duration: 1s;
+}
+
+.transition-left-mobile {
+  animation-name: move-left-mobile;
+  animation-duration: 1s;
 }
 
 .button--primary {
