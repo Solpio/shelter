@@ -46,70 +46,15 @@
         </h3>
         <div class="pets__pagination">
           <div class="pagination__wrapper">
-            <div class="pet_card pet_card--pets_page">
-              <img class="card__image" src="../../assets/images/pets-katrine.png" alt="kit"></img>
-              <div class="card__details">
-                <span class="card__name">Katrine</span>
-                <button class="card__button button--secondary">Learn more</button>
-              </div>
-            </div>
-            <div class="pet_card pet_card--pets_page">
-              <img class="card__image" src="../../assets/images/pets-jennifer.png" alt="kit"></img>
-              <div class="card__details">
-                <span class="card__name">Jennifer</span>
-                <button class="card__button button--secondary">Learn more</button>
-              </div>
-            </div>
-            <div class="pet_card pet_card--pets_page">
-              <img class="card__image" src="../../assets/images/pets-woody.png" alt="kit"></img>
-              <div class="card__details">
-                <span class="card__name">Woody</span>
-                <button class="card__button button--secondary">Learn more</button>
-              </div>
-            </div>
-            <div class="pet_card pet_card--pets_page">
-              <img class="card__image" src="../../assets/images/pets-sophia.png" alt="kit"></img>
-              <div class="card__details">
-                <span class="card__name">Sophia</span>
-                <button class="card__button button--secondary">Learn more</button>
-              </div>
-            </div>
-            <div class="pet_card pet_card--pets_page">
-              <img class="card__image" src="../../assets/images/pets-timmy.png" alt="kit"></img>
-              <div class="card__details">
-                <span class="card__name">Timmy</span>
-                <button class="card__button button--secondary">Learn more</button>
-              </div>
-            </div>
-            <div class="pet_card pet_card--pets_page">
-              <img class="card__image" src="../../assets/images/pets-charly.png" alt="kit"></img>
-              <div class="card__details">
-                <span class="card__name">Charly</span>
-                <button class="card__button button--secondary">Learn more</button>
-              </div>
-            </div>
-            <div class="pet_card pet_card--pets_page">
-              <img class="card__image" src="../../assets/images/pets-scarlet.png" alt="kit"></img>
-              <div class="card__details">
-                <span class="card__name">Scarlett</span>
-                <button class="card__button button--secondary">Learn more</button>
-              </div>
-            </div>
-            <div class="pet_card pet_card--pets_page">
-              <img class="card__image" src="../../assets/images/pets-freddie.png" alt="kit"></img>
-              <div class="card__details">
-                <span class="card__name">Freddie</span>
-                <button class="card__button button--secondary">Learn more</button>
-              </div>
-            </div>
+
           </div>
         </div>
         <nav class="pagination__navigation">
-          <button class="pagination__button pagination__button--disabled" disabled>&lt;&lt;</button>
-          <button class="pagination__button pagination__button--disabled" disabled>&lt;</button>
-          <div class="pagination__page"><span>1</span></div>
-          <button class="pagination__button">&gt;</button>
-          <button class="pagination__button">&gt;&gt;</button>
+          <button class="pagination__button pagination__button--disabled" disabled id="max_left">&lt;&lt;</button>
+          <button class="pagination__button pagination__button--disabled" disabled id="left">&lt;</button>
+          <div class="pagination__page"><span id="page_id">1</span></div>
+          <button class="pagination__button" id="right">&gt;</button>
+          <button class="pagination__button" id="max_right">&gt;&gt;</button>
         </nav>
       </div>
     </section>
@@ -148,7 +93,27 @@
       <img class="footer__image" src="../../assets/images/footer-puppy.png" alt="">
     </div>
   </footer>
-
+  <div class="blackout hidden"></div>
+  <div class="menu-mobile">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <h1 class="header__article">Cozy House</h1>
+        Shelter for pets in Boston
+      </div>
+    </div>
+    <nav class="header__navigation">
+      <ul class="navigation__table navigation__table--mobile">
+        <li class="navigation__table_item navigation__table_item--active"> <a class="nav__link nav__link--active"
+            href="#start"> About the shelter</a></li>
+        <li class="navigation__table_item"><a class="nav__link"
+            href="https://rolling-scopes-school.github.io/solpio-JSFE2022Q1/shelter/pets_page/">Our pets</a></li>
+        <li class="navigation__table_item"><a class="nav__link" href="#help">Help the shelter</a></li>
+        <li class="navigation__table_item"><a class="nav__link" href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pop-up"></div>
+  <script src="../../route_pets.js" type="module"></script>
 </body>
 
 </html>
