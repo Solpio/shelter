@@ -1,0 +1,13 @@
+.menu-mobile{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -200%;
+    width: $width-mobile;
+    height: 100vh;
+    background-color: $color-dark-3xl;
+    transition: all 0.5s;
+    &--active{
+        right: 0;
+    }
+}

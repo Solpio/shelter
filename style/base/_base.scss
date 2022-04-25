@@ -68,3 +68,11 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
+
+.noscroll{
+    overflow: hidden;
+}
+
+.novision{
+    opacity: 0;
+}

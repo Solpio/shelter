@@ -2,9 +2,12 @@
         width: 30px;
         height: 26px;
         display: none;
+        transition: all .5s;
         @include media-tablet{
             cursor: pointer;
             display: block;
+            position: relative;
+            z-index: 10;
         }
 }
 
@@ -30,4 +33,10 @@
         width: inherit;
         height: inherit;
     }
+}
+
+
+.rotated{
+    transform: rotate(90deg);
+    transition: all .5s;
 }

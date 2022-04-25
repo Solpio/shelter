@@ -23,6 +23,32 @@
                 border-bottom: 3px $color-primary solid;
             }
         }
+
+
+        &--mobile{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 158px;
+            @include media-tablet{
+                display: flex;
+            }
+            font-size: 32px;
+            
+            .navigation__table_item{
+                margin-right: 0px;
+                margin-bottom: 40px;
+                
+                &--active{
+                    color: $color-light-s;
+                    border-bottom: none
+                }
+                .nav__link{
+                    &--active{
+                        border-bottom: 3px $color-primary solid;
+                    }
+                }
+            }
+        }
     }
 }
 

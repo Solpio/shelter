@@ -1,0 +1,105 @@
+.pop-up{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    color: #000000;
+    border-radius: 9px;
+    &__button{
+        position: absolute;
+        right:  0;
+        top: -52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        border: 3px solid $color-primary;
+        border-radius: 100px;
+        &--reversed{
+            transform: rotate(180deg);
+        }
+        @extend %transition-time; 
+        &:hover{
+            background-color: $color-primary;
+        }
+    }
+    &__img{
+        width: 500px;
+        height: 500px;
+        margin-right: 11px;
+        @include media-desktop{
+            width: 350px;
+            height: 350px;
+        }
+        @include media-tablet{
+            display: none;
+        }
+    }
+    &__text{
+        margin-top: 50px;
+        margin-right: 20px;
+        &_p{
+            margin-top: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: .06em;
+            line-height: 110%;
+        }
+        @include media-desktop{
+            margin-top: 11px;
+            margin-right: 9px;
+            &_p{
+                font-size: 13px;
+            }
+        }
+
+        @include media-tablet{
+            margin: 0;
+            &_p{
+                margin-top: 20px;
+                text-align: justify;
+            }
+        }
+    }
+    &--article{
+        font-size: 35px;
+        @include media-tablet{
+            text-align: center;
+        }
+    }
+    &--under{
+        font-size: 20px;
+        @include media-tablet{
+            text-align: center;
+        }
+    }
+}
+
+.pet_information{
+    max-width: 900px;
+    display: flex;
+    background: #FAFAFA;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    @include media-desktop{
+        max-width: 630px;
+    }
+    @include media-tablet{
+        box-sizing: border-box;
+        max-width: 240px;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+.pet_extra{
+    margin-top: 40px;
+    &--item{
+        font-weight: 700;
+    }
+    @include media-desktop{
+        margin-top: 20px;
+    }
+    @include media-tablet{
+        margin-top: 24px;
+    }
+}
+
