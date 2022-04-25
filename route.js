@@ -1,3 +1,6 @@
+import Popup from "./popup.js";
+import Burger from "./burger_menu.js";
+
 const desktop = 1280;
 const tablet = 768;
 const mobile = 320;
@@ -12,7 +15,9 @@ const router = async () => {
       }
     })
   );
+    await Burger.createButton();
     await createSlider(bundle);
+
 };
 
 
@@ -30,9 +35,6 @@ async function createSlider(bundle){
 
   let leftSlides = takeSlides(restSlides);
   let rightSlides = takeSlides(restSlides);
-  // console.log(activeSlides);
-  // console.log(leftSlides);
-  // console.log(rightSlides);
 
   let cards_active = createCards(activeSlides);
   let cards_left = createCards(leftSlides);
@@ -134,7 +136,7 @@ function shaffle(array) {
 
   while (currentIndex != 0) {
 
-    randomIndex = Math.floor(Math.random() * currentIndex);
+    let randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
     [array[currentIndex], array[randomIndex]] = [
@@ -165,10 +167,16 @@ function createCard(obj){
   card_button.classList.add("button--secondary");
   card_button.textContent = "Learn more";
 
-  card_button.addEventListener("click",()=>console.log(obj.name))
 
   card_details.append(card_name, card_button);
   div.append(card_image,card_details);
+
+
+  div.addEventListener("click", ()=>{
+    Popup.createPopup(obj);
+  })
+
+
   return div;
 }
 
@@ -197,7 +205,6 @@ function takeSlides(arr){
 
   return activeSlides
 }
-
 
 
 
