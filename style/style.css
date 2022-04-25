@@ -355,7 +355,7 @@ h5 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.pagination__button, .slider__button, .button--secondary:hover, .button--secondary, .button--primary:hover, .button--primary, .pet_card, .card__wrapper {
+.pagination__button, .pop-up__button, .slider__button, .button--secondary:hover, .button--secondary, .button--primary:hover, .button--primary, .pet_card, .card__wrapper {
   transition: all 0.3s;
 }
 
@@ -453,6 +453,14 @@ button {
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.novision {
+  opacity: 0;
 }
 
 .wrapper {
@@ -717,6 +725,28 @@ body {
   color: #FAFAFA;
   border-bottom: 3px #F1CDB3 solid;
 }
+.navigation__table--mobile {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 158px;
+  font-size: 32px;
+}
+@media (max-width: 767px) {
+  .navigation__table--mobile {
+    display: flex;
+  }
+}
+.navigation__table--mobile .navigation__table_item {
+  margin-right: 0px;
+  margin-bottom: 40px;
+}
+.navigation__table--mobile .navigation__table_item--active {
+  color: #FAFAFA;
+  border-bottom: none;
+}
+.navigation__table--mobile .navigation__table_item .nav__link--active {
+  border-bottom: 3px #F1CDB3 solid;
+}
 
 .nav__link {
   color: #CDCDCD;
@@ -936,11 +966,14 @@ body {
   width: 30px;
   height: 26px;
   display: none;
+  transition: all 0.5s;
 }
 @media (max-width: 767px) {
   .burger_menu {
     cursor: pointer;
     display: block;
+    position: relative;
+    z-index: 10;
   }
 }
 
@@ -966,6 +999,161 @@ body {
   background-color: inherit;
   width: inherit;
   height: inherit;
+}
+
+.rotated {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.menu-mobile {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: -200%;
+  width: 320px;
+  height: 100vh;
+  background-color: #292929;
+  transition: all 0.5s;
+}
+.menu-mobile--active {
+  right: 0;
+}
+
+.pop-up {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+  color: #000000;
+  border-radius: 9px;
+}
+.pop-up__button {
+  position: absolute;
+  right: 0;
+  top: -52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 3px solid #F1CDB3;
+  border-radius: 100px;
+}
+.pop-up__button--reversed {
+  transform: rotate(180deg);
+}
+.pop-up__button:hover {
+  background-color: #F1CDB3;
+}
+.pop-up__img {
+  width: 500px;
+  height: 500px;
+  margin-right: 11px;
+}
+@media (max-width: 1279px) {
+  .pop-up__img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .pop-up__img {
+    display: none;
+  }
+}
+.pop-up__text {
+  margin-top: 50px;
+  margin-right: 20px;
+}
+.pop-up__text_p {
+  margin-top: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.06em;
+  line-height: 110%;
+}
+@media (max-width: 1279px) {
+  .pop-up__text {
+    margin-top: 11px;
+    margin-right: 9px;
+  }
+  .pop-up__text_p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .pop-up__text {
+    margin: 0;
+  }
+  .pop-up__text_p {
+    margin-top: 20px;
+    text-align: justify;
+  }
+}
+.pop-up--article {
+  font-size: 35px;
+}
+@media (max-width: 767px) {
+  .pop-up--article {
+    text-align: center;
+  }
+}
+.pop-up--under {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .pop-up--under {
+    text-align: center;
+  }
+}
+
+.pet_information {
+  max-width: 900px;
+  display: flex;
+  background: #FAFAFA;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media (max-width: 1279px) {
+  .pet_information {
+    max-width: 630px;
+  }
+}
+@media (max-width: 767px) {
+  .pet_information {
+    box-sizing: border-box;
+    max-width: 240px;
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+.pet_extra {
+  margin-top: 40px;
+}
+.pet_extra--item {
+  font-weight: 700;
+}
+@media (max-width: 1279px) {
+  .pet_extra {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .pet_extra {
+    margin-top: 24px;
+  }
+}
+
+.blackout {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 300%;
+  background: rgba(41, 41, 41, 0.6);
+  overflow: hidden;
+}
+.blackout:hover .pop-up__button:hover {
+  display: none;
 }
 
 .make_friend__article {
